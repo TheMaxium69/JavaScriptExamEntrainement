@@ -25,7 +25,7 @@ Pour cette partie, nous allons travailler dans les fichiers `1-bases/1-bases.htm
 
 ### 1.1. Utilisation des tableaux (1 point)
 
-- Déclarer un tableau nommé contenant les valeurs suivantes : `'test'`, `42`, `0.0`
+- Déclarer un tableau contenant les valeurs suivantes : `'test'`, `42`, `0.0` et affectez-le à une variable
 - Ajouter ensuite un élément à la fin du tableau, avec pour valeur `'second test'`
 - Retourner l'index de la valeur `'test'` à l'aide d'une méthode des tableaux vue en cours (et l'afficher dans la console)
 
@@ -59,7 +59,7 @@ Pour cette partie, nous allons travailler dans les fichiers `2-loops/2-loops.htm
 - Demander un nombre à l'utilisateur (fonction `prompt()`), entre 0 et 4 (0 et 4 inclus)
 
 - S'il entre autre chose qu'un nombre ou un nombre en dehors des valeurs autorisées, continuer à lui demander un nombre (afficher le message tant que la réponse n'est pas conforme aux attentes)
-- Afficher avec `alert()` le nom de chaussure (dans le tableau `shoes`) choisi par l'utilisateur (on utilise le nombre `n` entré pour récupérer l'entrée `n` du tableau)
+- Afficher avec `console.log()` le nom de chaussure (dans le tableau `shoes`) choisi par l'utilisateur (on utilise le nombre `n` entré pour récupérer l'entrée `n` du tableau)
 
 ## 3. DOM, événements et JQuery (5 points)
 
@@ -160,7 +160,7 @@ Un ensemble de données utilisable, une fois vos classes créées, est déjà pr
   - `quantity` (nombre entier) la quantité de produits disponibles
   - `price` (nombre flottant) le prix en euros d'un produit
 
-- Créer une classe `Cart` avec les propriétés suivantes
+- Créer une classe `Cart` avec les propriétés suivantes :
   - `customer` (chaine de caractères) le nom du client
   - `products` (tableau) les produits ajoutés au panier
 
