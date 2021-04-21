@@ -90,7 +90,7 @@ For this part, work in `3-dom/3-dom.html` and `3-dom/3-dom.js`. Don't forget to 
 
 You need JQuery for this part, download it and add a `script` node in your HTML or add a `script` node with a CDN link.
 
-### 3.2. Target and change content
+### 3.1. Target and change content
 
 - Target the title of the first article (`h2` node) with VanillaJS
   - **Replace** its text with `Un titre remplacé avec VanillaJS`
@@ -102,7 +102,7 @@ You need JQuery for this part, download it and add a `script` node in your HTML 
   - With VanillaJS, replace it with `test VanillaJS`
   - With JQuery, replace it with `test Jquery`
 
-### 3.3. Target and change classes
+### 3.2. Target and change classes
 
 - Target every articles' paragraphs (`p` node)
   - With VanillaJS, add a class `paragraph`
@@ -110,7 +110,7 @@ You need JQuery for this part, download it and add a `script` node in your HTML 
 - Target every articles' first paragraph (first `p` node of each article)
   - With JQuery, add a class `summary`
   
-### 3.4. Event listeners
+### 3.3. Event listeners
 
 - With VanillaJS, when clicking on `.more` links: 
   - prevent the page from reloading / changing
