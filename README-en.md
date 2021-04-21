@@ -11,11 +11,34 @@ In order to work on this project, you can either:
 
 ## List of exercises
 
+0. Reminder on VanillaJS and JQuery (0 points)
 1. Language's basics (3 points)
 2. Conditions et boucles (3 points)
 3. DOM, événement et JQuery (5 points)
 4. AJAX (5 points)
 5. POO (4 points)
+
+## 0. Reminder on VanillaJS and JQuery (0 points)
+
+| Notion | VanillaJS | JQuery |
+| ----- | ----- | ----- |
+| Target a node by its id | `document.getElementById('id')` | `$("#id")`|
+| Target **several** nodes by a class name | `document.getElementsByClassName('class')` | `$(".class")`|
+| Target **several** nodes by its node name | `document.getElementsByTagName('h1')` | `$("h1")`|
+| Cibler **un** noeud with a css selector | `document.querySelector('.class')` | `$(".class").first()`|
+| Target **several** with a css selector | `document.querySelectorAll('.class')` /!\ Don't forget: you get an array here | `$(".class")`|
+| Update a node's HTML | `element.innerHTML = ""` | `element.html("")`|
+| Update a node's text | `element.textContent = ""` | `element.text("")`|
+| Update a node's style | `element.style.fontSize = "20px"` | `element.css('font-size', '20px')`|
+| Update a node's attribute | `element.setAttribute("id", "unId")` | `element.attr("id", "unId")`|
+| Update a node's data-attribute | `element.dataSet.test = "value"` | `element.data("test", "value")` (invisible in HTML) or `element.attr("data-test", "value")` |
+| Get a form field's value | `document.querySelector('input[name="test"]').value` | `$('input[name="test"]').val()` |
+| Update a form field's value | `document.querySelector('[name="test"]').value = 'newValue'` | `$('input[name="test"]').val('newValue')` |
+| Create a new node | `document.createElement("p")` | `$('<p>')` |
+| Duplicate a node | `element.cloneNode("p")` | `element.clone()` |
+| Append a node to another node (at the end) | `element.appendChild(elementToAdd)` | `element.append(elementToAdd)` or `elementToAdd.appendTo(element)` |
+| Add a node at the beginning of another node | `element.prepend(elementToAdd)` | `element.prepend(elementToAdd)` or `eelementToAdd.prependTo(lement)` |
+| Append un event listener sur un noeud | `element.addEventListener('nomDeLEvent', function() {})` /!\ `element` **must be one node**, not an array | `element.on('nomDeLEvent', function() {})` /!\ `element` **can** contain several nodes in JQuery (and its not a problem) |
 
 ## 1. Language's basics (3 points)
 

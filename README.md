@@ -13,11 +13,34 @@ Pour travailler sur cet examen, 2 choix s'offrent à vous :
 
 Le barème indiqué est à titre indicatif, il peut être modifié au moment des corrections.
 
+0. Récapitulatif des différences entre VanillaJS et JQuery
 1. Syntaxe et bases du langage (3 points)
 2. Conditions et boucles (3 points)
 3. DOM, événement et JQuery (5 points)
 4. AJAX (5 points)
 5. POO (4 points)
+
+## 0. Récapitulatif des différences entre VanillaJS et JQuery (0 points)
+
+| Notion | VanillaJS | JQuery |
+| ----- | ----- | ----- |
+| Cibler un noeud par son id | `document.getElementById('id')` | `$("#id")`|
+| Cibler **des** noeuds par sa classe | `document.getElementsByClassName('class')` | `$(".class")`|
+| Cibler **des** noeuds par le nom de la balise | `document.getElementsByTagName('h1')` | `$("h1")`|
+| Cibler **un** noeud avec un sélecteur CSS | `document.querySelector('.class')` | `$(".class").first()`|
+| Cibler **des** noeuds avec un sélecteur CSS | `document.querySelectorAll('.class')` | `$(".class")`|
+| Modifier le HTML d'un noeud | `element.innerHTML = ""` | `element.html("")`|
+| Modifier le texte d'un noeud | `element.textContent = ""` | `element.text("")`|
+| Modifier le style d'un noeud | `element.style.fontSize = "20px"` | `element.css('font-size', '20px')`|
+| Modifier un attribut d'un noeud | `element.setAttribute("id", "unId")` | `element.attr("id", "unId")`|
+| Modifier un data-attribut d'un noeud | `element.dataSet.test = "value"` | `element.data("test", "value")` (non visible dans le HTML) ou `element.attr("data-test", "value")` |
+| Récupérer le contenu d'un champ de formulaire | `document.querySelector('input[name="test"]').value` | `$('input[name="test"]').val()` |
+| Modifier le contenu d'un champ de formulaire | `document.querySelector('[name="test"]').value = 'newValue'` | `$('input[name="test"]').val('newValue')` |
+| Créer un nouveau noeud | `document.createElement("p")` | `$('<p>')` |
+| Copier un noeud | `element.cloneNode("p")` | `element.clone()` |
+| Ajouter un noeud à la fin d'un autre | `element.appendChild(elementToAdd)` | `element.append(elementToAdd)` ou `elementToAdd.appendTo(element)` |
+| Ajouter un noeud au début d'un autre | `element.prepend(elementToAdd)` | `element.prepend(elementToAdd)` ou `eelementToAdd.prependTo(lement)` |
+| Ajouter un event listener sur un noeud | `element.addEventListener('nomDeLEvent', function() {})` /!\ `element` **doit être un et un seul noeud** et pas un tableau | `element.on('nomDeLEvent', function() {})` /!\ `element` **peut** contenir plusieurs noeuds avec JQuery sans que cela pose problème |
 
 ## 1. Syntaxe et bases du langage (3 points)
 
