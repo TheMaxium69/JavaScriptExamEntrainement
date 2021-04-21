@@ -58,7 +58,7 @@ Pour cette partie, nous allons travailler dans les fichiers `2-loops/2-loops.htm
 
 - Demander un nombre à l'utilisateur (fonction `prompt()`), entre 0 et 4 (0 et 4 inclus)
 
-- S'il entre autre chose qu'un nombre ou un nombre en dehors des valeurs autorisées, continuer à lui demander un nombre (afficher le message tant que la réponse n'est pas conforme aux attentes)
+- S'il entre autre chose qu'un nombre (utiliser `isNaN()`) ou un nombre en dehors des valeurs autorisées, continuer à lui demander un nombre (afficher le message tant que la réponse n'est pas conforme aux attentes)
 - Afficher avec `console.log()` le nom de chaussure (dans le tableau `shoes`) choisi par l'utilisateur (on utilise le nombre `n` entré pour récupérer l'entrée `n` du tableau)
 
 ## 3. DOM, événements et JQuery (5 points)

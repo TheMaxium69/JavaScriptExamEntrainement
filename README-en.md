@@ -55,7 +55,7 @@ For this part, work in `2-loops/2-loops.html` and `2-loops/2-loops.js`. Don't fo
 ### 2.2. Use `prompt()` (1.5 points)
 
 - Ask the user (using the `prompt()` function) a number, between 0 and 4 (0 and 4 are included)
-- While the user enters anything out of these values, keep asking for a correct number.
+- While the user enters anything out of these values (use `isNaN()`), keep asking for a correct number.
 - With `console.log()` get corresponding value in the array (`shoes`) (get the shoe with the user input as an index)
 
 ## 3. DOM, événements et JQuery (5 points)
