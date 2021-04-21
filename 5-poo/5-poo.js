@@ -19,5 +19,9 @@ let cart = new Cart();
 cart.customer = "Moi";
 cart.addProduct(beanie);
 cart.addProduct(tShirt);
+// cart.addProduct(short);
+
+// console.log(beanie, short, tShirt);
+console.log(cart);
 
 console.log(cart.getTotal());
